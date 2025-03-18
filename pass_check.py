@@ -29,4 +29,5 @@ def balls_add_score(pwd):
 
 score = balls_add_score(password)
 
+print(f'Введенный вами пароль: {password}')
 print(f'Рейтинг пароля: {score}')
