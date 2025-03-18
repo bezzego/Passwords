@@ -18,7 +18,7 @@ def has_symbols(pwd):
     return any(not char.isalnum() for char in pwd)
 
 
-CHECKS = [
+checks = [
     has_digit,
     has_upper_letters,
     has_lower_letters,
@@ -28,7 +28,7 @@ CHECKS = [
 
 
 def balls_add_score(pwd):
-    return sum(2 for check in CHECKS if check(pwd))
+    return sum(2 for check in checks if check(pwd))
 
 
 def main():
